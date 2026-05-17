@@ -1,0 +1,25 @@
+print("Cambel8058")
+name = input("Enter your name: ")
+student_id = input("Enter your Student ID: ")
+
+num1 = int(input("Enter your first whole number: "))
+num2 = int(input("Enter your second whole number: "))
+
+add_result = num1 + num2
+sub_result = num1 - num2
+mul_result = num1 * num2
+
+print(f"Addition result: {add_result:.2f}")
+print(f"Subtraction result: {sub_result:.2f}")
+print(f"Multiplication result: {mul_result:.2f}")
+
+# Compare numbers
+if num1 > num2:
+    print("Your first number is larger than the second.")
+elif num1 < num2:
+    print("Your first number is smaller than the second.")
+else:
+    print("Both numbers are equal.")
+
+print(f"Name: {name}")
+print(f"Student ID: {student_id}")
