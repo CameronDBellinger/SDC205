@@ -1,0 +1,46 @@
+# Name: Cameron Bellinger
+# Date: 05/23/2026
+# Description: A program that greets the user, runs a number guessing game,counts attempts, and demonstrates while and for loops.
+
+print("Student ID: Cambel8058")
+
+
+# USER INFORMATION
+userName = input("Enter your name: ")
+userId = input("Enter your Student ID: ")
+
+print(f"\nHello, {userName}! Welcome to the guessing game.\n")
+
+# GUESSING GAME
+correctNumber = 5
+userGuess = 0
+guessCount = 0
+
+userGuess = int(input("Guess a number between 1 and 10: "))
+guessCount += 1
+
+if userGuess > correctNumber:
+    print("Your guess is too high.")
+elif userGuess < correctNumber:
+    print("Your guess is too low.")
+else:
+    print("You guessed correctly!")
+
+print(f"It took you {guessCount} attempt(s) to guess.\n")
+
+print("Output from the 'while' loop:")
+x = correctNumber
+counter = 0
+
+while counter < 5:
+    x += 1
+    print(f"x incremented by 1 is {x}")
+    counter += 1
+
+# FOR LOOP
+print("\nOutput from the 'for' loop:")
+x = correctNumber
+
+for i in range(5):
+    x += 1
+    print(f"x incremented by 1 is {x}")
