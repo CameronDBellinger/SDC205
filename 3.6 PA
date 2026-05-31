@@ -1,0 +1,30 @@
+# Name: Cameron Bellinger
+# Date: 05/31/2026
+def functionOne():
+    print("My Student ID is Cambel8058")
+
+def functionTwo():
+    numOne = int(input("Enter the first number: "))
+    numTwo = int(input("Enter the second number: "))
+    totalSum = numOne + numTwo
+    print(f"The sum of {numOne} and {numTwo} is {totalSum}")
+    return totalSum
+
+def functionThree(sumValue):
+    if sumValue > 5:
+        print("The sum is greater than 5.")
+    else:
+        print("The sum is 5 or less.")
+
+    return 8058   # numeric part of Cambel8058
+
+def functionFour():
+    print("Function Four executing… nothing required here, just a placeholder.")
+
+def main():
+    functionOne()                     # Calls functionOne() which prints your Student ID
+    returnedSum = functionTwo()       # Calls functionTwo(), prints sum, stores return value
+    idNumber = functionThree(returnedSum)  # Passes sum to functionThree(), stores returned ID
+    print(f"functionThree returned the value of {idNumber}")  # Prints Student ID
+
+main()
