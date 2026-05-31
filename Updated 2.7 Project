@@ -1,0 +1,50 @@
+# Name: Cameron Bellinger
+# Date: 05/23/2026
+
+from datetime import datetime
+
+print("Student ID: Cambel8058")
+print("Current date and time:", datetime.now(), "\n")
+
+# USER INFORMATION
+userName = input("Enter your name: ")
+userId = input("Enter your Student ID: ")
+
+print(f"\nHello, {userName}! Welcome to the guessing game.\n")
+
+# GUESSING GAME
+correctNumber = 5
+guessCount = 0
+userGuess = None
+
+# Repeatedly ask until the user guesses correctly
+while userGuess != correctNumber:
+    userGuess = int(input("Guess a number between 1 and 10: "))
+    guessCount += 1
+
+    if userGuess > correctNumber:
+        print("Your guess is too high.\n")
+    elif userGuess < correctNumber:
+        print("Your guess is too low.\n")
+    else:
+        print("You guessed correctly!\n")
+
+print(f"It took you {guessCount} attempt(s) to guess.\n")
+
+# WHILE LOOP
+print("Output from the 'while' loop:")
+x = correctNumber
+counter = 0
+
+while counter < 5:
+    x += 1
+    print(f"{correctNumber} incremented by {counter + 1} is {x}")
+    counter += 1
+
+# FOR LOOP
+print("\nOutput from the 'for' loop:")
+x = correctNumber
+
+for i in range(5):
+    x += 1
+    print(f"{correctNumber} incremented by {i + 1} is {x}")
